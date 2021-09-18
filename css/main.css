@@ -1,0 +1,310 @@
+@import url("reset.css");
+@import url('<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:300,700&display=swap" rel="stylesheet">');
+html, body{
+    background: #253141;
+    font-family: 'Open Sans Condensed', sans-serif;
+    background-image: linear-gradient(to bottom , rgba(37, 49, 65, 0.6) 0%,
+    #253141 50%,
+    #253141 50%),
+    url("https://venturebeat.com/wp-content/uploads/2019/02/apexlegends.jpg?w=1200&strip=all");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px ;
+
+}
+header .left-menu{
+    display: flex;
+    
+}
+header .left-menu .logo{
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+}
+header .left-menu .menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+}
+header .left-menu .menu a{
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    padding: 0 20px;
+    text-transform: uppercase;
+    font-weight: 300;
+    transition: all .2s ease-in-out;
+
+}
+
+header .left-menu .menu a:hover{
+    color: rgba(255, 255, 255, 1);
+
+}
+
+header .left-menu .menu a .fa{
+    margin-left: 10px;
+
+}
+
+
+
+header .right-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+header .right-menu .language{
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    padding: 0 60px 0 0;
+    text-transform: uppercase;
+    font-weight: 300;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+
+header .right-menu .language:hover{
+    color: rgba(255, 255, 255, 1);
+}
+
+header .right-menu .language .fa{
+    margin-left: 10px;
+
+}
+
+header .right-menu .signin{
+    background: #0375d5;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+
+}
+.container{
+    width: 1400px;
+    margin: 0 auto;
+}
+.section-title{
+    font-size: 1.8rem;
+    color: white;
+    margin-bottom: 25px;
+
+}
+#featured{
+    padding: 10px 0 20px;
+}
+
+#featured .videos-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 620px 1fr 1fr;
+    grid-gap: 8px;
+}
+#featured .videos-section .video {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+#featured .videos-section .video .image{
+    width: 100%;
+    height: 300px;
+    background: url("https://thumbor.forbes.com/thumbor/fit-in/1200x0/filters%3Aformat%28jpg%29/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5eb42e3c6c4c1f000652ddd1%2F0x0.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+#featured .videos-section .video.center{
+    width: 100%;
+    height: 349px;
+    background: red;
+
+}
+
+#featured .videos-section .video.center .image{
+    width: 100%;
+    height: 349px;
+    background: url("https://i.ytimg.com/vi/g_LS0uC-H0g/maxresdefault.jpg");
+    transform: scale(1.05);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 2px solid #0375d5;
+
+}
+
+#featured .videos-section .video:nth-child(1) .image, 
+#featured .videos-section .video:nth-child(5) .image{
+    position: relative;
+
+}
+#featured .videos-section .video:nth-child(1) .image .arrow{
+    height: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    transition: all .2s ease-in-out;
+
+
+
+}
+
+#featured .videos-section .video:nth-child(1) .image .arrow:hover{
+    background: rgba(0, 0, 0, 0.8);
+
+}
+
+
+
+#featured .videos-section .video:nth-child(5) .image .arrow{
+    height: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    right: 0;
+    transition: all .2s ease-in-out;
+
+
+
+}
+#featured .videos-section .video:nth-child(5) .image .arrow:hover{
+    background: rgba(0, 0, 0, 0.8);
+
+}
+
+
+#featured .videos-section .video:nth-child(1) .image .arrow .fa, 
+#featured .videos-section .video:nth-child(5) .image .arrow .fa{
+    font-size: 4rem;
+    color: #0375d5;
+}
+
+#featured .dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 35px;
+
+}
+
+#featured .dots .circles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#featured .dots .circles .cirlce{
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#featured .dots .circles .cirlce .background-color{
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: white;
+    transition: all .2s ease-in-out;
+    
+}
+#featured .dots .circles .cirlce:hover .background-color{
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background: #00b4f0;
+    
+}
+#featured .dots .circles .cirlce.active .background-color{
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background: #00b4f0;
+
+    
+}
+
+#top-games{
+    padding: 10px;
+}
+
+#top-games .games{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px;
+}
+
+#top-games .games .game{
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2W96JPihC1XnaLhOgWnFJlbQbRq35aGQNbQ&usqp=CAU");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 260px;
+    border-radius: 5px;
+    position: relative;
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
+    overflow: hidden;
+    cursor: pointer;
+
+}
+
+#top-games .games .game .info{
+    background: #253041;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    transition: all .2s ease-in-out;
+
+
+}
+
+#top-games .games .game:hover .info{
+    background: #313f55;
+
+}
+
+
+#top-games .games .game .info .title{
+    font-weight: 500;
+    margin-bottom: 10px;
+
+}
+
+#top-games .games .game .info .views{
+    font-weight: 300;
+    color: #8c919d;
+    font-size: 0.9rem;
+
+}
+
+#top-games .games .game .info .views .fa{
+    margin-right: 5px;
+
+}
